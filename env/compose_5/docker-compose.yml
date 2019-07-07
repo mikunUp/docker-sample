@@ -9,3 +9,9 @@ services:
       - 8080:80
     volumes:
       - ../../php/:/var/www/html
+    networks:
+      - sampletest
+      - default
+networks:
+  sampletest:
+    external: true
