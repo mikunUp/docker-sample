@@ -1,0 +1,11 @@
+version: '3'
+services:
+  php-apache:
+    build:
+      context: ../php_5
+      dockerfile: Dockerfile
+    container_name: 'php-5.3'
+    ports:
+      - 8080:80
+    volumes:
+      - ../../php/:/var/www/html
