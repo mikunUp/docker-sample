@@ -4,7 +4,7 @@ services:
     build:
       context: ../php_5
       dockerfile: Dockerfile
-    container_name: 'php-5.3'
+    container_name: 'php-5.6'
     ports:
       - 8080:80
     volumes:
