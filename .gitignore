@@ -1,0 +1,2 @@
+# mysqlの永続化データファイルは無視
+env/mysql/data/*

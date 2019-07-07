@@ -23,7 +23,7 @@ services:
       # 初期データを投入するSQLが格納されているdir
       - ../mysql/init:/docker-entrypoint-initdb.d
       # 永続化するときにマウントするdir
-      # - ../mysql/data:/var/lib/mysql
+      - ../mysql/data:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=root
     networks:
